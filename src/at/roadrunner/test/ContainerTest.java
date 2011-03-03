@@ -33,7 +33,6 @@ public class ContainerTest {
 	@Before
 	public void setUp() throws Exception {
 		_c = new Container();
-		assertTrue(_c instanceof Container);
 	}
 
 	/**
@@ -42,6 +41,11 @@ public class ContainerTest {
 	@After
 	public void tearDown() throws Exception {
 		_c = null;
+	}
+
+	@Test
+	public void Container() {
+		assertTrue(_c instanceof Container);
 	}
 
 	@Test
