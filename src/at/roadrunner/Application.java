@@ -10,6 +10,8 @@
  */
 package at.roadrunner;
 
+import at.roadrunner.Container.ItemIsAlreadyLoadedException;
+
 /**
  * Class Application
  * 
@@ -26,4 +28,30 @@ public class Application {
 		return _next_id++;
 	}
 
+	/**
+	 * Main entry point.
+	 * 
+	 * @param args
+	 */
+	static public void main(String[] args) {
+
+		// create the application
+		Application app = new Application();
+
+		// create first container
+		Container container = new Container();
+
+		// create some items
+		Item item1 = new Item(app.getNextId());
+		Item item2 = new Item(app.getNextId());
+
+		try {
+			container.load(item1);
+			container.load(item2);
+
+		} catch (ItemIsAlreadyLoadedException e) {
+			e.printStackTrace();
+		}
+
+	}
 }
