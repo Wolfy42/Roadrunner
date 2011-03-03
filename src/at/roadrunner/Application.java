@@ -1,5 +1,5 @@
 /**
- * RaodrunnerTest.java
+ * Application.java
  *
  * This file is part of the Roadrunner project.
  * 
@@ -8,13 +8,22 @@
  * @author Franziskus Domig
  * @date 03.03.2011
  */
-package at.roadrunner.test;
+package at.roadrunner;
 
 /**
- * Class RaodrunnerTest
+ * Class Application
  * 
  * @author Franziskus Domig
  */
-public class RoadrunnerTest {
+public class Application {
+
+	private int _next_id = 1;
+
+	/**
+	 * @return int next id
+	 */
+	public int getNextId() {
+		return _next_id++;
+	}
 
 }
