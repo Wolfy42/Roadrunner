@@ -10,6 +10,7 @@
  */
 package at.roadrunner.test;
 
+import static org.easymock.EasyMock.createMock;
 import static org.junit.Assert.assertTrue;
 
 import org.junit.After;
@@ -17,6 +18,8 @@ import org.junit.Before;
 import org.junit.Test;
 
 import at.roadrunner.Container;
+import at.roadrunner.Item;
+import at.roadrunner.Container.ItemIsAlreadyLoadedException;
 
 /**
  * Class ContainerTest
@@ -26,21 +29,18 @@ import at.roadrunner.Container;
 public class ContainerTest {
 
 	private Container _c;
+	private Item _i;
 
-	/**
-	 * @throws java.lang.Exception
-	 */
 	@Before
 	public void setUp() throws Exception {
 		_c = new Container();
+		_i = createMock(Item.class);
 	}
 
-	/**
-	 * @throws java.lang.Exception
-	 */
 	@After
 	public void tearDown() throws Exception {
 		_c = null;
+		_i = null;
 	}
 
 	@Test
@@ -49,8 +49,14 @@ public class ContainerTest {
 	}
 
 	@Test
-	public void load() {
-		// TODO
+	public void loadAnItem() throws ItemIsAlreadyLoadedException {
+		_c.load(_i);
+	}
+	
+	@Test (expected=ItemIsAlreadyLoadedException.class)
+	public void notPossibleToMultipleLoadItem() throws ItemIsAlreadyLoadedException {
+		_c.load(_i);
+		_c.load(_i);
 	}
 
 	@Test
