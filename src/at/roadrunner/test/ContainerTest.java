@@ -10,8 +10,8 @@
  */
 package at.roadrunner.test;
 
-import static org.easymock.EasyMock.createMock;
 import static org.junit.Assert.assertTrue;
+import static org.mockito.Mockito.*;
 
 import org.junit.After;
 import org.junit.Before;
@@ -34,7 +34,7 @@ public class ContainerTest {
 	@Before
 	public void setUp() throws Exception {
 		_c = new Container();
-		_i = createMock(Item.class);
+		_i = mock(Item.class);
 	}
 
 	@After
@@ -60,7 +60,7 @@ public class ContainerTest {
 	}
 
 	@Test
-	public void unload() {
+	public void unload()  {
 		// TODO
 	}
 
