@@ -42,7 +42,6 @@ public class ApplicationTest {
 	@After
 	public void tearDown() throws Exception {
 		_a = null;
-		// matthias test
 	}
 
 	/**
