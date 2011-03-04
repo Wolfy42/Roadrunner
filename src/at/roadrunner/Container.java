@@ -41,5 +41,21 @@ public class Container {
 	public static class ItemIsAlreadyLoadedException extends Exception {
 		private static final long serialVersionUID = 935332355695182505L;
 	}
+	
+	public static class ItemNotLoadedException extends Exception {
+		private static final long serialVersionUID = 7209826392461202563L;
+	}
+
+	public void unload(Item item) throws ItemNotLoadedException  {
+		testIfItemIsLoaded(item);
+		_items.remove(item);
+		
+	}
+	
+	private void testIfItemIsLoaded(Item item) throws ItemNotLoadedException  {
+		if (!_items.contains(item))  {
+			throw new ItemNotLoadedException();
+		}
+	}
 
 }

@@ -20,6 +20,7 @@ import org.junit.Test;
 import at.roadrunner.Container;
 import at.roadrunner.Item;
 import at.roadrunner.Container.ItemIsAlreadyLoadedException;
+import at.roadrunner.Container.ItemNotLoadedException;
 
 /**
  * Class ContainerTest
@@ -60,8 +61,14 @@ public class ContainerTest {
 	}
 
 	@Test
-	public void unload()  {
-		// TODO
+	public void simpleLoadAndUnload() throws ItemIsAlreadyLoadedException, ItemNotLoadedException  {
+		_c.load(_i);
+		_c.unload(_i);
+	}
+	
+	@Test (expected=ItemNotLoadedException.class)
+	public void unloadWithoutLoad() throws ItemNotLoadedException  {
+		_c.unload(_i);
 	}
 
 }
