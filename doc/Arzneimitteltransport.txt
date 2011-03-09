@@ -1,0 +1,19 @@
+---Problemstellungen---
+
+Nachverfolgbarkeit einer Lieferung:
+- Zeitpunkte beim Warenempfang/Warenzustellung/Zwischenlagerungen
+- Temperatur bei der Lieferung
+- Position während der Lieferung
+
+Temperaturbereiche:
+- 2°C - 30°C: Regeltemperaturbereich
+- 2°C - 8°C: Kühlwarentemperaturbereich
+
+Besondere Probleme bei Arzneimitteln:
+- Transportvorgang darf nur bestimmte Zeit dauern (zB 24 Stunden)
+- Notfalltransporte können nötig sein (Bestimmtes Medikament muss sofort transportiert werden)
+- Teilweise auch giftige Stoffe (für Chemotherapie) -> Gefahrengut  
+
+Abgrenzungen:
+
+- Rechtliche Situation bei Transport durch andere Länder wird nicht beachtet.
