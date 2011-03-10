@@ -64,6 +64,7 @@ public class HttpSensorTest {
 	@After
 	public void tearDown() throws Exception {
 		_httpSensor = null;
+		_pos = 0;
 	}
 
 	/**
