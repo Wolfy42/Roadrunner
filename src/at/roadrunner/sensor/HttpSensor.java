@@ -35,7 +35,7 @@ public class HttpSensor implements Sensor {
 		StringBuilder string = new StringBuilder();
 		int b = 0;
 		while (-1 != (b = _connection.getInputStream().read())) {
-			string.append(String.valueOf(b));
+			string.append((char) b);
 		}
 		return string.toString();
 	}

@@ -10,7 +10,14 @@
  */
 package at.roadrunner;
 
+import java.io.IOException;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
+
 import at.roadrunner.Container.ItemIsAlreadyLoadedException;
+import at.roadrunner.sensor.HttpSensor;
+import at.roadrunner.sensor.Sensor;
 
 /**
  * Class Application
@@ -49,7 +56,19 @@ public class Application {
 			container.load(item1);
 			container.load(item2);
 
+			HttpURLConnection connection = (HttpURLConnection) new URL(
+					"http://127.0.0.1:4711").openConnection();
+
+			Sensor s1 = new HttpSensor(connection);
+			System.out.println("Sensor 1 Data: " + s1.getData());
+
 		} catch (ItemIsAlreadyLoadedException e) {
+			e.printStackTrace();
+		} catch (MalformedURLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 

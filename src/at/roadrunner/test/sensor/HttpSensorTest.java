@@ -46,7 +46,7 @@ public class HttpSensorTest {
 		InputStream stream = new InputStream() {
 			@Override
 			public int read() throws IOException {
-				char[] data = { 1, 7 };
+				char[] data = { '1', '7' };
 				if (_pos >= data.length) {
 					return -1;
 				}
