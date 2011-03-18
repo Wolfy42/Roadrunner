@@ -1,0 +1,31 @@
+#####################
+# Session Protocol	#
+# Date: 18.03.2011	#
+# Author: MS		#
+#####################
+
+device registrierung
+sicherheits layer - verschlüsselung
+daten auf mobile device ? nur read not write...
+
+
+daten konflikte - wie gehen wir damit um?
+
+datenprovider
+
+zeitsynchronisation --> wie genau muss die zeit sein?
+
+
+android market für unternehmen, der updates push auf die devices pusht
+
+zigbee opensafety
+
+energieverbrauch spezifizieren bei mobilen devices
+kostenfrage??? beantworten
+Wirtschaftlicher Aspekt --> in dokumentation unumgänglich --> aber ausreichend ausgebaut
+
+genaue spezifikation von energieverbrauch, kosten, etc.
+
+
+
+was passiert beim verbindungsabbruch? datenbank. was für daten werden ausgetauscht? <-- wichtig.
