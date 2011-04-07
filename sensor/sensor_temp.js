@@ -1,5 +1,5 @@
 /**
- * sensor01.js
+ * sensor_temp.js
  * 
  * @author matthias schmid
  * @date 07.04.2011
@@ -15,8 +15,20 @@ var temp = function() {
     return rand.toString();
 }
 
+
+if (argv.port == null || argv.port == 'undefined' || argv.ip == null 
+		|| argv.ip == 'undefined') {
+	
+	console.log("\nTEMPERATUR SENSOR ERROR:\n" +
+			"Start Sensor with: node sensor_time.js " +
+			"--ip <ip address> --port <port number>\n");
+	return;
+}
+
 http.createServer(function(req, res) {
-    console.log(req.method + " " + req.url + ' HTTP/' + req.httpVersion);
+    console.log(req.method + " " + req.url + ' HTTP/' + req.httpVersion + ' at ' 
+    		+ new Date());
+    
     res.writeHead('200', {'Content-Type': 'text/plain'});
     res.end(temp());
 }).listen(argv.port, argv.ip);
