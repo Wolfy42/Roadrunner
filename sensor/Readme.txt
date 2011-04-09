@@ -17,4 +17,4 @@ installiert werden:
 
 
 Sensor starten mit:
-node sensor.js --ip 127.0.0.1 --port 4711
+node sensor.js --ip 172.16.102.224 --port 4711
