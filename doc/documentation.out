@@ -2,8 +2,18 @@
 \BOOKMARK [1][]{section.2}{Spezifikation}{}
 \BOOKMARK [2][]{subsection.2.1}{Technologie}{section.2}
 \BOOKMARK [2][]{subsection.2.2}{Fragestellungen}{section.2}
-\BOOKMARK [1][]{section.3}{Iteration 1}{}
-\BOOKMARK [2][]{subsection.3.1}{Ziele}{section.3}
-\BOOKMARK [2][]{subsection.3.2}{UML}{section.3}
-\BOOKMARK [1][]{section.4}{Sicherheit}{}
-\BOOKMARK [2][]{subsection.4.1}{Zeitsynchronisierung}{section.4}
+\BOOKMARK [1][]{section.3}{Usecases}{}
+\BOOKMARK [1][]{section.4}{Iteration 1}{}
+\BOOKMARK [2][]{subsection.4.1}{Ziele}{section.4}
+\BOOKMARK [2][]{subsection.4.2}{UML}{section.4}
+\BOOKMARK [1][]{section.5}{Sicherheit}{}
+\BOOKMARK [2][]{subsection.5.1}{Zeitsynchronisierung}{section.5}
+\BOOKMARK [1][]{section.6}{Sensorik}{}
+\BOOKMARK [2][]{subsection.6.1}{Was f\374r Sensoren werden verwendet?}{section.6}
+\BOOKMARK [2][]{subsection.6.2}{Wann und wie kommt der Sensor ins System?}{section.6}
+\BOOKMARK [2][]{subsection.6.3}{Wie wird er \374berwacht und erreicht?}{section.6}
+\BOOKMARK [2][]{subsection.6.4}{Wie werden dem Mobilen Device Sensoren zugeordnet?}{section.6}
+\BOOKMARK [2][]{subsection.6.5}{Simulation}{section.6}
+\BOOKMARK [2][]{subsection.6.6}{Wie sieht unsere Sensorsimulation aus?}{section.6}
+\BOOKMARK [2][]{subsection.6.7}{Warum nodejs?}{section.6}
+\BOOKMARK [2][]{subsection.6.8}{Ben\366tigte Packete}{section.6}
